@@ -19,13 +19,19 @@ body {
     border-radius:20px;
 }
 
+h1 {
+    text-align: center;
+}
+
 .bayan-item{
     width: 80%;
+    margin: 0 auto;
 }
 
 .bayan-item-input{
      display:none;
 }
+
 
 .bayan-item-titel{
    padding: 30px;
@@ -50,8 +56,22 @@ body {
     display: none;
 }
 
+.bayan-item-input:checked ~ .bayan-item-titel {
+    background-color: rgb(204, 244, 247);
+}
+
+.bayan-item-input:checked~.bayan-item-content {
+    display: block;
+    background-color: rgb(204, 244, 247);
+    transition: .2s;
+}
+
+
+
 .icon {
-    
+  display: block;
+  margin-right: 0;  
+
 }
 
 .relax {
