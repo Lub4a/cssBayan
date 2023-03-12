@@ -5,11 +5,24 @@ body {
     font-size: 16px;
     font-weight: 600;
 }
+/* media for phone */
+@media screen and (min-width: 320px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    body {
+        font-size: 20px;
+    }
+}
 
 .conteiner {
     margin: 0 auto;
     background-color: rgb(225, 223, 223);
     max-width: 1080px;
+    height: auto;
 }
 
 .bayan {
@@ -24,7 +37,7 @@ h1 {
 }
 
 .bayan-item{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -67,7 +80,10 @@ h1 {
 .bayan-item-input:checked ~.bayan-item-content{
     display: block;
     background-color: rgb(204, 244, 247);
-    transition: display 2s;
+}
+
+img:checked ~.bayan-item-content {
+    display:none;
 }
 
 .fa-sharp:checked ~.bayan-item-content{
@@ -89,4 +105,11 @@ h1 {
 .relax {
     border-bottom: 2px solid black;
     border-radius: 10px;
+}
+
+img {
+    display: block;
+    min-width: 320px;
+    margin: 0 auto;
+    transition: display 2s;
 }
