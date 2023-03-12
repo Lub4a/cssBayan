@@ -1,0 +1,60 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.conteiner {
+    margin: 0 auto;
+    background-color: rgb(225, 223, 223);
+    max-width: 1080px;
+}
+
+.bayan {
+    display:block;
+    margin: 0 auto;
+    border: 3px solid 5px;
+    border-radius:20px;
+}
+
+.bayan-item{
+    width: 80%;
+}
+
+.bayan-item-input{
+     display:none;
+}
+
+.bayan-item-titel{
+   padding: 30px;
+   border: 2px solid black;
+   border-radius:10px;
+   width: 93%;
+   display: block;
+   border-bottom: none;
+   cursor: pointer;
+}
+.bayan-item-titel:hover{
+    color:blue;
+}
+
+.bayan-item-content{
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-bottom: none;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+.icon {
+    
+}
+
+.relax {
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+}
