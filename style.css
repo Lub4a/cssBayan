@@ -1,0 +1,115 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* media for phone */
+@media screen and (min-width: 320px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+.conteiner {
+    margin: 0 auto;
+    background-color: rgb(225, 223, 223);
+    max-width: 1080px;
+    height: auto;
+}
+
+.bayan {
+    display:block;
+    margin: 0 auto;
+    border: 3px solid 5px;
+    border-radius:20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.bayan-item{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.bayan-item-input{
+     display:none;
+     position: absolute
+}
+
+
+.bayan-item-titel{
+   padding: 30px;
+   border: 2px solid black;
+   border-radius:10px;
+   width: 93%;
+   display: block;
+   border-bottom: none;
+   cursor: pointer;
+}
+
+.bayan-item-titel:hover,
+.fa-sharp:hover {
+    color:blue;
+}
+
+
+.bayan-item-content{
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-bottom: none;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+.bayan-item-input:checked ~ .bayan-item-titel {
+    background-color: rgb(204, 244, 247);
+}
+
+.bayan-item-input:checked ~.bayan-item-content{
+    display: block;
+    background-color: rgb(204, 244, 247);
+}
+
+img:checked ~.bayan-item-content {
+    display:none;
+}
+
+.fa-sharp:checked ~.bayan-item-content{
+    display: block;
+    transform: rotate(400deg);
+}
+
+.fa-sharp {
+  position: absolute;
+  margin-left: 800px; 
+  margin-top: -50px; 
+  cursor: pointer;
+}
+
+.fa-sharp:active {
+    transform: rotate(400deg);
+}
+
+.relax {
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+}
+
+img {
+    display: block;
+    min-width: 320px;
+    margin: 0 auto;
+    transition: display 2s;
+}
